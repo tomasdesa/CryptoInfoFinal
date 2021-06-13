@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">CryptoInfoFinal</string>
+
+    <string name="naoexiste">Não existe esse utilizador!</string>
+    <string name="passErrada">Palavra-Passe Errada!</string>
+    <string name="campoutilizador">Campo Utilizador vazio</string>
+    <string name="campopassword">Campo Password vazio</string>
+    <string name="Problemas">Problemas</string>
+
+    <string name="preference_file_key" translatable="false">file1</string>
+    <string name="button" translatable="false">false</string>
+    <string name="username" translatable="false">username</string>
+    <string name="password" translatable="false">password</string>
+    <string name="guardar_utilizador">Guardar utilizador</string>
+    <string name="inserir_username">Inserir Username</string>
+    <string name="inserir_password">Inserir Password</string>
 </resources>
