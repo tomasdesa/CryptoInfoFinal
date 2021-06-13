@@ -19,6 +19,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Login"/>
+        <activity android:name=".Notification"/>
 
         <meta-data
             android:name="preloaded_fonts"
