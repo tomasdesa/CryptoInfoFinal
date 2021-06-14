@@ -10,7 +10,7 @@ object ServiceBuilder {
     private val client= OkHttpClient.Builder().build()
 
     private val retrofit = Retrofit.Builder()
-        .baseUrl("https://pro-api.coinmarketcap.com/v1/cryptocurrency/")
+        .baseUrl("https://api.nomics.com/")
         .addConverterFactory((GsonConverterFactory.create()))
         .client(client)
         .build()

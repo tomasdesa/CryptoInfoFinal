@@ -1,7 +1,6 @@
 package ipvc.estg.cryptoinfofinal.APIMarket
 
 
-import okhttp3.ResponseBody
 import retrofit2.http.*
 import retrofit2.http.Path
 import retrofit2.Call
@@ -11,17 +10,17 @@ interface Endpoints {
 
 
 
-    @GET("/listings/latest?CMC_PRO_API_KEY=9c6fd1d2-2deb-47d6-a524-440e18194cae&start=1&limit=10")
-    fun  getMoedas(): Call<Data>
+    @GET("/v1/currencies/ticker?key=62b6fc652e8520947713e6123cad26d94f699902&interval=1d,30d&convert=EUR&per-page=10&page=1")
+    fun  getMoedas(): Call<List<Moeda>>
 
-    @GET("/user/{id}")
+    /*@GET("/user/{id}")
     fun getUserById(@Path("id") id:Int): Call<Moeda>
 
     @FormUrlEncoded
     @POST("/myslim/API/user/login")
     fun login(@Field("username") username:String?,
               @Field("password") password:String?): Call<OutputPost>
-
+*/
     /*@GET("/myslim/API/marker")
     fun  getMarkers(): Call<List<marker>>
 

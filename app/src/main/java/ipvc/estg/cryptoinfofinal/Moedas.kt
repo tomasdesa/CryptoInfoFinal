@@ -2,10 +2,10 @@ package ipvc.estg.cryptoinfofinal
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import ipvc.estg.cryptoinfofinal.APIMarket.Data
 import ipvc.estg.cryptoinfofinal.APIMarket.Endpoints
 import ipvc.estg.cryptoinfofinal.APIMarket.Moeda
 import ipvc.estg.cryptoinfofinal.APIMarket.ServiceBuilder
@@ -16,20 +16,22 @@ import retrofit2.Response
 
 class Moedas : AppCompatActivity() , MoedaAdapter.OnMoedaClickListener {
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_moedas)
+        Log.v("api", "hello")
 
         val request = ServiceBuilder.buildService(Endpoints::class.java)
 
         val call = request.getMoedas()
-        val recyclerView = findViewById<RecyclerView>(R.id.coin_layout)
+        val recyclerView = findViewById<RecyclerView>(R.id.recyclermarker)
 
-        Toast.makeText(this@Moedas, "Ocorreu um erro", Toast.LENGTH_SHORT).show()
-
-        call.enqueue(object : Callback<Data> {
-            override fun onResponse(call: Call<Data>, response: Response<Data>) {
+        call.enqueue(object : Callback<List<Moeda>> {
+            override fun onResponse(call: Call<List<Moeda>>, response: Response<List<Moeda>>) {
+                Toast.makeText(this@Moedas, response.toString(), Toast.LENGTH_LONG).show()
                 if(response.isSuccessful) {
+                    Log.v("api", response.body()!!.toString())
                     recyclerView.apply {
                         setHasFixedSize(true)
                         layoutManager = LinearLayoutManager (this@Moedas)
@@ -40,8 +42,9 @@ class Moedas : AppCompatActivity() , MoedaAdapter.OnMoedaClickListener {
                 }
             }
 
-            override fun onFailure(call: Call<Data>, t: Throwable) {
-                Toast.makeText(this@Moedas, "Ocorreu um erro", Toast.LENGTH_SHORT).show()
+            override fun onFailure(call: Call<List<Moeda>>, t: Throwable) {
+                Toast.makeText(this@Moedas, "${t.message}", Toast.LENGTH_LONG).show()
+
             }
         })
     }
