@@ -35,7 +35,7 @@ class Moedas : AppCompatActivity() , MoedaAdapter.OnMoedaClickListener {
                     recyclerView.apply {
                         setHasFixedSize(true)
                         layoutManager = LinearLayoutManager (this@Moedas)
-                        adapter = MoedaAdapter(response.body()!!,this@Moedas)
+                        adapter = MoedaAdapter(response.body()!!,this@Moedas,this@Moedas)
 
 
                     }
