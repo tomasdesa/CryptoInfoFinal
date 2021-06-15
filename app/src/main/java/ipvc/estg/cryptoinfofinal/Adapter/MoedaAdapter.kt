@@ -37,6 +37,8 @@ class MoedaAdapter(val moeda: List<Moeda>, var clickListener: OnMoedaClickListen
             symbol.text =moeda.symbol
             price.text=moeda.price.toString()
             h1.text=moeda.h1.price_change_pct.toString()
+            h24.text=moeda.d1.price_change_pct.toString()
+            d7.text=moeda.d7.price_change_pct.toString()
 
             itemView.setOnClickListener{
                 action.onMoedaClick(moeda, adapterPosition)
