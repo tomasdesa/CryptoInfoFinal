@@ -102,7 +102,7 @@
                         android:layout_height="wrap_content"></TextView>
 
                     <TextView
-                        android:id="@+id/oneHour"
+                        android:id="@+id/oneDay"
                         android:text=""
                         android:layout_marginEnd="16dp"
                         android:layout_marginRight="16dp"
@@ -118,7 +118,7 @@
                         android:layout_height="wrap_content"></TextView>
 
                     <TextView
-                        android:id="@+id/twentyFourHour"
+                        android:id="@+id/oneday"
                         android:text=""
                         android:layout_marginEnd="16dp"
                         android:layout_marginRight="16dp"

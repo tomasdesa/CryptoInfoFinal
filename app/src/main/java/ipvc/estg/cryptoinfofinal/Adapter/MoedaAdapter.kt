@@ -28,13 +28,15 @@ class MoedaAdapter(val moeda: List<Moeda>, var clickListener: OnMoedaClickListen
         private val name: TextView = itemView.findViewById(R.id.coinName)
         private val symbol : TextView = itemView.findViewById(R.id.coinSymbol)
         private val price: TextView = itemView.findViewById(R.id.priceUsd)
-        private val h1: TextView = itemView.findViewById(R.id.oneHour)
-        private val h24: TextView = itemView.findViewById(R.id.twentyFourHour)
+        private val h1: TextView = itemView.findViewById(R.id.oneDay)
+        private val h24: TextView = itemView.findViewById(R.id.oneday)
         private val d7: TextView = itemView.findViewById(R.id.sevenDay)
 
         fun bind(moeda: Moeda, action: OnMoedaClickListener) {
             name.text = moeda.name
             symbol.text =moeda.symbol
+            price.text=moeda.price.toString()
+            h1.text=moeda.h1.price_change_pct.toString()
 
             itemView.setOnClickListener{
                 action.onMoedaClick(moeda, adapterPosition)

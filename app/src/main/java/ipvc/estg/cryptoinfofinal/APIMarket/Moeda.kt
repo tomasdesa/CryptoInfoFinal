@@ -1,7 +1,6 @@
 package ipvc.estg.cryptoinfofinal.APIMarket
 
-import com.google.gson.annotations.SerializedName
-
+import com.google.gson.annotations.*
 data class Moeda (
 
 
@@ -28,6 +27,38 @@ data class Moeda (
        val rank_delta : Int,
        val high : Double,
        val high_timestamp : String,
-       val d1 : d1,
-       val d30 : d30
+       @SerializedName("1h") val h1 : h1,
+       @SerializedName("1d") val d1 : d1,
+       @SerializedName("7d") val d7: d7
+)
+
+data class d7 (
+
+        val volume : Double,
+        val price_change : Double,
+        val price_change_pct : Double,
+        val volume_change : Double,
+        val volume_change_pct : Double,
+        val market_cap_change : Double,
+        val market_cap_change_pct : Double
+)
+data class d1 (
+
+        val volume : Double,
+        val price_change : Double,
+        val price_change_pct : Double,
+        val volume_change : Double,
+        val volume_change_pct : Double,
+        val market_cap_change : Double,
+        val market_cap_change_pct : Double
+)
+data class h1 (
+
+        val volume : Double,
+        val price_change : Double,
+        val price_change_pct : Double,
+        val volume_change : Double,
+        val volume_change_pct : Double,
+        val market_cap_change : Double,
+        val market_cap_change_pct : Double
 )
