@@ -10,12 +10,14 @@ interface Endpoints {
 
 
 
-    @GET("/v1/currencies/ticker?key=62b6fc652e8520947713e6123cad26d94f699902&interval=1h,1d,7d&convert=EUR&per-page=10&page=1")
+    @GET("/v1/currencies/ticker?key=62b6fc652e8520947713e6123cad26d94f699902&interval=1h,1d,7d&convert=EUR&per-page=15&page=1&sort=rank")
     fun  getMoedas(): Call<List<Moeda>>
 
     @GET("/v1/currencies/sparkline?key=62b6fc652e8520947713e6123cad26d94f699902")
     fun  getMoedaInfo(@Query("ids") id:String?,@Query("start",encoded = true) start:String): Call<List<TimeStampsPrices>>
 
+    @GET("/v1/currencies/ticker?key=62b6fc652e8520947713e6123cad26d94f699902&interval=1h,1d,7d&convert=EUR&per-page=100&page=1&sort=rank")
+    fun  getConversor(): Call<List<Moeda>>
     /*@GET("/user/{id}")
     fun getUserById(@Path("id") id:Int): Call<Moeda>
 

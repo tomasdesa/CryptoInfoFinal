@@ -1,11 +1,13 @@
 package ipvc.estg.cryptoinfofinal
 
 import android.app.Activity
+import android.content.Intent
 import android.graphics.Color
 import android.media.Image
 import android.os.Build
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
@@ -58,6 +60,7 @@ class MoedaInfo : AppCompatActivity() {
         val imagelogo= findViewById<ImageView>(R.id.LogoMoeda)
         val priceMoeda=findViewById<TextView>(R.id.Price)
         val NameMoeda=findViewById<TextView>(R.id.NameMoeda)
+        val conversor =findViewById<Button>(R.id.conversor)
 
         if(imagemMoeda.toString().contains(".svg")){
             SvgLoader.pluck()
@@ -170,6 +173,10 @@ class MoedaInfo : AppCompatActivity() {
             }
         })
 
+        conversor.setOnClickListener(){
+            val intent = Intent(this, Conversor::class.java)
+            startActivity(intent)
+        }
 
 
     }

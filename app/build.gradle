@@ -9,10 +9,11 @@ android {
 
     defaultConfig {
         applicationId "ipvc.estg.cryptoinfofinal"
-        minSdkVersion 16
+        minSdkVersion 19
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -29,6 +30,10 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
+    }
+    configurations {
+        cleanedAnnotations
+        compile.exclude group: 'org.jetbrains' , module:'annotations'
     }
 }
 
@@ -48,5 +53,8 @@ dependencies {
     implementation 'com.squareup.picasso:picasso:2.71828'
     implementation 'com.github.ar-android:AndroidSvgLoader:1.0.2'
     implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    implementation'com.github.scrounger:countrycurrencypicker:1.1.1'
+    implementation 'androidx.multidex:multidex:2.0.1'
+
 
 }
