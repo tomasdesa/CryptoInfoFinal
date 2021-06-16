@@ -56,7 +56,7 @@ class Login : AppCompatActivity() {
 
                         val c: OutputPost = response.body()!!
                         Toast.makeText(this@Login,c.MSG,Toast.LENGTH_SHORT).show()
-                        //markerInicio(c.id,user)
+                        Moedas(c.id,user)
                         finish()
                     }
                 }
@@ -107,7 +107,7 @@ class Login : AppCompatActivity() {
                             Toast.makeText(this@Login,c.MSG,Toast.LENGTH_SHORT).show()
 
                             if (c.status=="true"){
-                                Moedas()
+                                Moedas(c.id,user)
                                 finish()
                             }
 
@@ -128,8 +128,10 @@ class Login : AppCompatActivity() {
             startActivity(intent)
         }*/
     }
-    fun Moedas() {
+    fun Moedas(iduser: String, user:String?) {
         val intent = Intent(this, Moedas::class.java)
+        intent.putExtra("id_user", iduser)
+        intent.putExtra("username", user)
         startActivity(intent)
     }
     fun checkboxisClicked(view: View){

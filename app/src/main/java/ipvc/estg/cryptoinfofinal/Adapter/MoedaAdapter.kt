@@ -45,7 +45,7 @@ class MoedaAdapter(val moeda: List<Moeda>,var activity: Activity, var clickListe
             name.text = moeda.name
             symbol.text =moeda.symbol
             price.text=moeda.price.toString()
-            h1.text=Math.round((moeda.h1.price_change_pct)*100 ).toString()
+            h1.text=Math.round((moeda.h1.price_change_pct*100) ).toString()
             h24.text=Math.round((moeda.d1.price_change_pct)*100).toString()
             d7.text=Math.round((moeda.d7.price_change_pct)*100).toString()
 

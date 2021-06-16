@@ -1,5 +1,6 @@
 package ipvc.estg.cryptoinfofinal
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -21,6 +22,9 @@ class Moedas : AppCompatActivity() , MoedaAdapter.OnMoedaClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_moedas)
         Log.v("api", "hello")
+
+        val idUser = getIntent().getStringExtra("id_user")
+        val username = getIntent().getStringExtra("username")
 
         val request = ServiceBuilder.buildService(Endpoints::class.java)
 
@@ -50,6 +54,12 @@ class Moedas : AppCompatActivity() , MoedaAdapter.OnMoedaClickListener {
     }
 
     override fun onMoedaClick(moeda: Moeda, position: Int) {
-        TODO("Not yet implemented")
+        val idUser = getIntent().getStringExtra("id_user")
+        //Toast.makeText(this, nota.titulo, Toast.LENGTH_SHORT).show()
+        val intent = Intent(this, MoedaInfo::class.java)
+        intent.putExtra("id", moeda.id)
+        intent.putExtra("id_user",idUser )
+        startActivity(intent)
+        finish()
     }
 }
