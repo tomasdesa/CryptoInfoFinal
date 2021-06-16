@@ -14,4 +14,5 @@
     <string name="guardar_utilizador">Guardar utilizador</string>
     <string name="inserir_username">Inserir Username</string>
     <string name="inserir_password">Inserir Password</string>
+    <string name="converter">Converter</string>
 </resources>
