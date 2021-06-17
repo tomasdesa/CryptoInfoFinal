@@ -18,6 +18,10 @@ interface Endpoints {
 
     @GET("/v1/currencies/ticker?key=62b6fc652e8520947713e6123cad26d94f699902&interval=1h,1d,7d&convert=EUR&per-page=100&page=1&sort=rank")
     fun  getConversor(): Call<List<Moeda>>
+
+    @GET("/v1/currencies/ticker?key=62b6fc652e8520947713e6123cad26d94f699902")
+    fun  getMoedaParaConverter(@Query("ids") id:String?,@Query("convert",encoded = true) convert:String): Call<List<Moeda>>
+
     /*@GET("/user/{id}")
     fun getUserById(@Path("id") id:Int): Call<Moeda>
 
