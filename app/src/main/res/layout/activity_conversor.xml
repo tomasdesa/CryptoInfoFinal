@@ -20,8 +20,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="99dp"
-            android:layout_marginBottom="563dp"
+            android:layout_marginEnd="51dp"
+            android:layout_marginBottom="530dp"
             android:fontFamily="@font/doppio_one"
             android:text="@string/Conversor"
             android:textAlignment="center"
@@ -46,12 +46,12 @@
 
         <Button
             android:id="@+id/converter"
-            android:layout_width="145dp"
-            android:layout_height="65dp"
+            android:layout_width="363dp"
+            android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="131dp"
-            android:layout_marginBottom="7dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="52dp"
             android:text="@string/converter" />
 
         <TextView

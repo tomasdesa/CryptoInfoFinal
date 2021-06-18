@@ -26,10 +26,16 @@
                 android:icon="@drawable/ic_baseline_calculate_24"
                 />
             <item
+                android:id="@+id/tut"
+                android:title="@string/tutNav"
+                android:icon="@drawable/ic_baseline_slideshow_24"
+                />
+            <item
                 android:id="@+id/logout"
                 android:title="@string/logout"
                 android:icon="@drawable/ic_baseline_exit_to_app_24"
                 />
+
         </menu>
     </item>
 </menu>

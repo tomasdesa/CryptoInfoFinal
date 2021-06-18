@@ -20,4 +20,15 @@
     <string name="para">To:</string>
     <string name="pre_o">Price:</string>
     <string name="simbolo">Symbol:</string>
+    <string name="moedasfavoritas">Favourite Coins</string>
+    <string name="tutBemvindo">Welcome to CryptoInfo</string>
+    <string name="tutdescBv">Before we begin lets procede with a small tutorial</string>
+    <string name="tut2">A cryptocurrency is a digital asset designed to work as a medium of exchange.</string>
+    <string name="tut3">The diference between normal currency is that cryptocurrence allows for dicentralization , anonymity and low cost transaction.</string>
+    <string name="tut4">In this app you ll be able to see several cryptocurrences information such as their real time value in any currency of the world !</string>
+    <string name="tut6">Thats it !</string>
+    <string name="tutdescfinal">This tutorial is available anytime if you need to re see it !</string>
+    <string name="tut5">News</string>
+    <string name="tutNav">Tutorial</string>
+    <string name="tut5desc">Acess the news menu to learn more about the cryptocurrency world !</string>
 </resources>

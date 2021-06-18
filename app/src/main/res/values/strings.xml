@@ -221,5 +221,15 @@
     <string name="pre_o">Preço:</string>
     <string name="simbolo">Simbolo:</string>
     <string name="moedasfavoritas">Moedas favoritas</string>
+    <string name="tutBemvindo">Bem vindo á CryptoInfo</string>
+    <string name="tutdescBv">Antes de prosseguirmos vamos começar com um pequeno tutorial das cryptocurrências.</string>
+    <string name="tut2">CryptoMoedas são moedas digitais que utilizam a criptografia como segurança dos dados bem como criar novas unidades e fazer transações.</string>
+    <string name="tut3">A diferença entre dinheiro comum é que possui a descentralização, anonimato e baixo custo.</string>
+    <string name="tut4">Nesta aplicação poderás ver várias informações de diferentes cryptomoedas tais como os seus valores em tempo real em todo o tipo de moeda existente do mundo.</string>
+    <string name="tut5">Noticias</string>
+    <string name="tut6">Tudo pronto !</string>
+    <string name="tutdescfinal">Este tutorial encontra-se disponivel nas definições sempre que necessites de rever</string>
+    <string name="tutNav">Tutorial</string>
+    <string name="tut5desc">Acede ao menu noticias caso queiras aprender tudo sobre a atualidade do mundo das cryptomoedas !</string>
 
 </resources>

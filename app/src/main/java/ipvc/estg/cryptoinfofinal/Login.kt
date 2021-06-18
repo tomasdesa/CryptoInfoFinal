@@ -129,7 +129,7 @@ class Login : AppCompatActivity() {
         }*/
     }
     fun Moedas(iduser: String, user:String?) {
-        val intent = Intent(this, Moedas::class.java)
+        val intent = Intent(this, tutorial::class.java)
         intent.putExtra("id_user", iduser)
         intent.putExtra("username", user)
         startActivity(intent)

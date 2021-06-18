@@ -151,6 +151,13 @@ class Moedas : AppCompatActivity() , MoedaAdapter.OnMoedaClickListener {
                     startActivity(intent)
                     finish()
                 }
+                R.id.tut-> {
+                    val intent = Intent(this, tutorial::class.java)
+                    intent.putExtra("username",username)
+                    intent.putExtra("id_user", idUser)
+                    startActivity(intent)
+                    finish()
+                }
                 R.id.logout ->{
 
                     val sharedPref: SharedPreferences =getSharedPreferences(

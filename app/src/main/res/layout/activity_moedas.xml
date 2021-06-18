@@ -9,72 +9,77 @@
     android:background="@drawable/novo_gradiente"
     android:id="@+id/drawerLayout">
 
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Moedas">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:context=".Moedas">
 
 
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="157dp"
-        android:layout_height="55dp"
-        android:layout_marginEnd="124dp"
-        android:layout_marginBottom="20dp"
-        android:fontFamily="@font/doppio_one"
-        android:text="@string/Moedas"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toTopOf="@+id/recyclermarker"
-        app:layout_constraintEnd_toEndOf="parent" />
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="157dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="116dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/doppio_one"
+            android:text="@string/Moedas"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toTopOf="@+id/recyclermarker"
+            app:layout_constraintEnd_toEndOf="parent" />
 
-    <ImageView
-        android:id="@+id/imgmenu"
-        android:layout_width="60dp"
-        android:layout_height="40dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginEnd="332dp"
-        android:layout_marginBottom="72dp"
-        android:src="@drawable/ic_baseline_menu_24"
-        app:layout_constraintBottom_toTopOf="@+id/recyclermarker"
-        app:layout_constraintEnd_toEndOf="parent" />
+        <ImageView
+            android:id="@+id/imgmenu"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="72dp"
+            android:src="@drawable/ic_baseline_menu_24"
+            app:layout_constraintBottom_toTopOf="@+id/recyclermarker"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.045"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
 
-    <ImageView
-        android:id="@+id/moedaFavoritas"
-        android:layout_width="60dp"
-        android:layout_height="40dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="72dp"
-        android:src="@drawable/ic_baseline_more_vert_24"
-        app:layout_constraintBottom_toTopOf="@+id/recyclermarker"
-        app:layout_constraintEnd_toEndOf="parent" />
+        <ImageView
+            android:id="@+id/moedaFavoritas"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_baseline_more_vert_24"
+            app:layout_constraintBottom_toTopOf="@+id/recyclermarker"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.955"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.188" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclermarker"
-        android:layout_width="411dp"
-        android:layout_height="523dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginTop="35dp"
-        android:paddingBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        tools:listitem="@layout/coin_layout" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclermarker"
+            android:layout_width="411dp"
+            android:layout_height="523dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="35dp"
+            android:paddingBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            tools:listitem="@layout/coin_layout" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
     <include layout="@layout/nav_drawer"></include>
 
 </androidx.drawerlayout.widget.DrawerLayout>
