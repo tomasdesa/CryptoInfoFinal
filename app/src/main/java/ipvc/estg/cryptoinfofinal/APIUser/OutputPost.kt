@@ -1,4 +1,4 @@
-package ipvc.estg.cryptoinfofinal.API
+package ipvc.estg.cryptoinfofinal.APIUser
 
 data class OutputPost (
     val status:String,

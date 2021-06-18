@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="@string/my_account">
+        <menu>
+            <item
+                android:id="@+id/home"
+                android:title="@string/home"
+                android:icon="@drawable/ic_baseline_home_24"
+                />
+            <item
+                android:id="@+id/Noticias"
+                android:title="@string/noticias"
+                android:icon="@drawable/ic_baseline_all_inbox_24"
+                />
+            <item
+                android:id="@+id/Moedas"
+                android:title="@string/Moedas"
+                android:icon="@drawable/ic_baseline_monetization_on_24"
+                />
+            <item
+                android:id="@+id/Conversor"
+                android:title="@string/Conversor"
+                android:icon="@drawable/ic_baseline_calculate_24"
+                />
+            <item
+                android:id="@+id/logout"
+                android:title="@string/logout"
+                android:icon="@drawable/ic_baseline_exit_to_app_24"
+                />
+        </menu>
+    </item>
+</menu>

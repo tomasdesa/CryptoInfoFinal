@@ -1,4 +1,4 @@
-package ipvc.estg.cryptoinfofinal.API
+package ipvc.estg.cryptoinfofinal.APIUser
 
 
 import okhttp3.MultipartBody
@@ -7,7 +7,7 @@ import retrofit2.http.*
 import retrofit2.http.Path
 import retrofit2.Call
 
-interface Endpoints {
+interface Endpoint {
 
     @GET("/myslim/API/user")
     fun  getUsers(): Call<List<User>>
@@ -19,6 +19,18 @@ interface Endpoints {
     @POST("/myslim/API/user/login")
     fun login(@Field("username") username:String?,
               @Field("password") password:String?): Call<OutputPost>
+
+    @FormUrlEncoded
+    @POST("/myslim/API/MoedaFavoritar")
+    fun moedafavorita(@Field("nome") nome:String?,
+              @Field("idAPI") idAPI:String?,@Field("idUser") idUser:Int): Call<OutputPost>
+
+    @GET("/myslim/API/moedaUser/{idUser}")
+    fun moedafavoritaUser(@Path("idUser") id:Int): Call<List<MoedaFavorita>>
+
+
+    @POST("/myslim/API/moedaUnfavorite/{id}")
+    fun DeleteFavorite(@Path("id") id:Int?): Call<OutputMoeda>
 
     /*@GET("/myslim/API/marker")
     fun  getMarkers(): Call<List<marker>>

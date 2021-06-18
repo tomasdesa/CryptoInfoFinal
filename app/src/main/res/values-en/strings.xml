@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CryptoInfoFinal</string>
+    <string name="naoexiste">There is no such user!</string>
+    <string name="passErrada">Wrong Password!</string>
+    <string name="campoutilizador">User field empty</string>
+    <string name="campopassword">Password field empty</string>
+    <string name="Problemas">Problems</string>
+    <string name="guardar_utilizador">Save User</string>
+    <string name="inserir_username">Insert Username</string>
+    <string name="inserir_password">Insert Password</string>
+    <string name="converter">Convert</string>
+    <string name="de">From:</string>
+    <string name="Moedas">Coins</string>
+    <string name="my_account">My account</string>
+    <string name="noticias">News</string>
+    <string name="Bemvindo">Welcome</string>
+    <string name="Conversor">Converter</string>
+    <string name="resultado">Result:</string>
+    <string name="para">To:</string>
+    <string name="pre_o">Price:</string>
+    <string name="simbolo">Symbol:</string>
+</resources>

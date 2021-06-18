@@ -1,11 +1,11 @@
-package ipvc.estg.cryptoinfofinal.API
+package ipvc.estg.cryptoinfofinal.APIUser
 
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 
-object ServiceBuilder {
+object ServiceBuilder1 {
 
     private val client= OkHttpClient.Builder().build()
 

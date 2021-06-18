@@ -1,11 +1,17 @@
 package ipvc.estg.cryptoinfofinal
 
 
+import android.content.Context
+import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.text.Editable
 import android.util.Log
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.GravityCompat
+import androidx.drawerlayout.widget.DrawerLayout
+import com.google.android.material.navigation.NavigationView
 import com.scrounger.countrycurrencypicker.library.Buttons.CountryCurrencyButton
 import com.scrounger.countrycurrencypicker.library.Country
 import com.scrounger.countrycurrencypicker.library.Currency
@@ -29,6 +35,68 @@ class Conversor : AppCompatActivity() {
         val textviewNumero= findViewById<EditText>(R.id.Numero)
         val Resultado=findViewById<TextView>(R.id.Resultado)
         var currency:String=""
+        val drawerLayout = findViewById<DrawerLayout>(R.id.drawerLayout)
+        val imgMenu = findViewById<ImageView>(R.id.imgmenu3)
+        val idUser = intent.getStringExtra("id_user")
+        val username = intent.getStringExtra("username")
+
+
+        val navView = findViewById<NavigationView>(R.id.navDrawer)
+        navView.itemIconTintList=null
+        val headerview = navView.getHeaderView(0)
+        val headertxt = headerview.findViewById<TextView>(R.id.headertxt)
+        headertxt.text = getString(R.string.Bemvindo) +" " + username
+
+        navView.setNavigationItemSelectedListener {
+            when (it.itemId){
+                R.id.home ->{
+                    drawerLayout.closeDrawer(GravityCompat.START)
+                }
+                R.id.Noticias ->{
+
+                    /*val intent = Intent(this, ipvc.estg.commovtp1.Marker::class.java)
+                    intent.putExtra("id_user", idUser)
+                    startActivity(intent)*/
+                }
+                R.id.Moedas->{
+
+                    val intent = Intent(this, Moedas::class.java)
+                    intent.putExtra("username",username)
+                    intent.putExtra("id_user", idUser)
+                    startActivity(intent)
+                    finish()
+                }
+                R.id.Conversor->{
+
+                    drawerLayout.closeDrawer(GravityCompat.START)
+                }
+                R.id.logout ->{
+
+                    val sharedPref: SharedPreferences =getSharedPreferences(
+                        getString(R.string.preference_file_key), Context.MODE_PRIVATE)
+
+                    val editor: SharedPreferences.Editor= sharedPref.edit()
+                    editor.clear()
+                    editor.commit()
+                    editor.apply()
+
+                    val intent = Intent(this, Login::class.java)
+                    startActivity(intent)
+                    finish()
+
+
+                }
+
+            }
+            // Close the drawer
+            drawerLayout.closeDrawer(GravityCompat.START)
+            true
+        }
+
+        imgMenu.setOnClickListener{
+            drawerLayout.openDrawer(GravityCompat.START)
+        }
+
 
         currencypicker.setOnClickListener(object : CountryCurrencyPickerListener {
             override fun onSelectCountry(country: Country) {

@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.CryptoInfoFinal" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.CryptoInfoFinal" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">#0F1FAF</item>
         <item name="colorPrimaryVariant">#2F39FF</item>
@@ -13,5 +13,14 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="Theme.CryptoInfoFinal.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.CryptoInfoFinal.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.CryptoInfoFinal.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>

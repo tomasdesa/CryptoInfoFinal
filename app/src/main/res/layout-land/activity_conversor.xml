@@ -20,8 +20,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="99dp"
-            android:layout_marginBottom="563dp"
+            android:layout_marginEnd="257dp"
+            android:layout_marginBottom="314dp"
             android:fontFamily="@font/doppio_one"
             android:text="@string/Conversor"
             android:textAlignment="center"
@@ -37,9 +37,9 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="339dp"
-            android:layout_marginRight="339dp"
-            android:layout_marginBottom="597dp"
+            android:layout_marginEnd="643dp"
+            android:layout_marginRight="643dp"
+            android:layout_marginBottom="338dp"
             android:src="@drawable/ic_baseline_menu_24"
             app:layout_constraintBottom_toTopOf="@+id/recyclermarker"
             app:layout_constraintEnd_toEndOf="parent" />
@@ -50,8 +50,8 @@
             android:layout_height="65dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="131dp"
-            android:layout_marginBottom="7dp"
+            android:layout_marginEnd="299dp"
+            android:layout_marginBottom="11dp"
             android:text="@string/converter" />
 
         <TextView
@@ -60,45 +60,12 @@
             android:layout_height="56dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="24dp"
-            android:layout_marginBottom="118dp"
+            android:layout_marginEnd="106dp"
+            android:layout_marginBottom="106dp"
             android:fontFamily="@font/doppio_one"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="24sp" />
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="86dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="297dp"
-            android:layout_marginBottom="459dp"
-            android:fontFamily="@font/doppio_one"
-            android:text="@string/de"
-            android:textColor="@color/black"
-            android:textSize="24sp" />
-
-        <Spinner
-            android:id="@+id/spinner"
-            android:layout_width="233dp"
-            android:layout_height="46dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="153dp"
-            android:layout_marginBottom="394dp" />
-
-        <EditText
-            android:id="@+id/Numero"
-            android:layout_width="122dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="12dp"
-            android:layout_marginBottom="397dp"
-            android:ems="10"
-            android:inputType="number" />
 
         <com.scrounger.countrycurrencypicker.library.Buttons.CountryCurrencyButton
             android:id="@+id/picker"
@@ -106,21 +73,21 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="26dp"
-            android:layout_marginBottom="264dp"
+            android:layout_marginEnd="188dp"
+            android:layout_marginBottom="233dp"
             app:country_code="PT"
             app:show_currency="true" />
 
         <TextView
-            android:id="@+id/textView9"
-            android:layout_width="182dp"
-            android:layout_height="55dp"
+            android:id="@+id/textView6"
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="208dp"
-            android:layout_marginBottom="191dp"
+            android:layout_marginEnd="574dp"
+            android:layout_marginBottom="245dp"
             android:fontFamily="@font/doppio_one"
-            android:text="@string/resultado"
+            android:text="@string/de"
             android:textColor="@color/black"
             android:textSize="24sp" />
 
@@ -130,10 +97,43 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="270dp"
-            android:layout_marginBottom="329dp"
+            android:layout_marginEnd="547dp"
+            android:layout_marginBottom="186dp"
             android:fontFamily="@font/doppio_one"
             android:text="@string/para"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="233dp"
+            android:layout_height="46dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="299dp"
+            android:layout_marginBottom="178dp" />
+
+        <EditText
+            android:id="@+id/Numero"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="157dp"
+            android:layout_marginBottom="181dp"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="182dp"
+            android:layout_height="55dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="482dp"
+            android:layout_marginBottom="107dp"
+            android:fontFamily="@font/doppio_one"
+            android:text="@string/resultado"
             android:textColor="@color/black"
             android:textSize="24sp" />
 

@@ -12,9 +12,9 @@ import android.widget.Button
 import android.widget.CheckBox
 import android.widget.TextView
 import android.widget.Toast
-import ipvc.estg.cryptoinfofinal.API.Endpoints
-import ipvc.estg.cryptoinfofinal.API.OutputPost
-import ipvc.estg.cryptoinfofinal.API.ServiceBuilder
+import ipvc.estg.cryptoinfofinal.APIUser.Endpoint
+import ipvc.estg.cryptoinfofinal.APIUser.OutputPost
+import ipvc.estg.cryptoinfofinal.APIUser.ServiceBuilder1
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -27,7 +27,7 @@ class Login : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        val request = ServiceBuilder.buildService(Endpoints::class.java)
+        val request = ServiceBuilder1.buildService(Endpoint::class.java)
 
         val usernameText = findViewById<TextView>(R.id.username)
 

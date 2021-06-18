@@ -4,15 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login"
-    android:background="@drawable/background">
+    tools:context=".Login">
 
     <Button
         android:id="@+id/login"
         android:layout_width="128dp"
         android:layout_height="76dp"
-        android:layout_marginEnd="140dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="28dp"
         android:text="Login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -22,11 +21,10 @@
         android:layout_width="141dp"
         android:layout_height="52dp"
         android:layout_marginTop="4dp"
+        android:layout_marginEnd="292dp"
         android:text="@string/guardar_utilizador"
         android:textSize="12sp"
-        app:layout_constraintEnd_toStartOf="@+id/login"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/login" />
 
     <com.airbnb.lottie.LottieAnimationView
@@ -34,14 +32,12 @@
         android:layout_width="wrap_content"
         android:layout_height="300dp"
 
+        android:layout_marginEnd="364dp"
         app:layout_constraintBottom_toBottomOf="parent"
+
         app:layout_constraintEnd_toEndOf="parent"
-
-        app:layout_constraintHorizontal_bias="0.498"
-
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.234"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
         app:lottie_url="https://assets2.lottiefiles.com/private_files/lf30_h03e9pog.json" />
@@ -51,22 +47,22 @@
         android:layout_width="185dp"
         android:layout_height="79dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="292dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginBottom="264dp"
         android:fontFamily="@font/doppio_one"
         android:text="Login"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
         android:id="@+id/password"
         android:layout_width="293dp"
         android:layout_height="40dp"
-        android:layout_marginEnd="56dp"
-        android:layout_marginBottom="140dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="124dp"
         android:ems="10"
         android:hint="@string/inserir_password"
         android:inputType="textPassword"
@@ -78,13 +74,13 @@
         android:id="@+id/username"
         android:layout_width="297dp"
         android:layout_height="42dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginBottom="192dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="184dp"
         android:ems="10"
         android:hint="@string/inserir_username"
         android:inputType="textPersonName"
         android:textColorHint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
